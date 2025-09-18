@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 Manos Mágicas</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Datos institucionales y logo UVM -->
+  <div style="text-align:center; margin-top:24px;">
+  <img src="uvm-logo.png" alt="Logo UVM" style="width:180px; max-width:90vw; margin-bottom:12px;">
+    <div style="font-size:1.15rem; color:#6A1B9A; font-weight:700; margin-bottom:6px;">CREADORA: Violeta Sarai Marquez Vargas</div>
+    <div style="font-size:1.08rem; color:#333; margin-bottom:4px;">UNIVERSIDAD DEL VALLE DE MÉXICO</div>
+    <div style="font-size:1.08rem; color:#333; margin-bottom:12px;">MATERIA: Diseñar para compartir</div>
+  </div>
+  <header class="header" role="banner">
+    <div class="header-content">
+      <img src="https://images.pexels.com/photos/4610642/pexels-photo-4610642.jpeg?auto=compress&w=60&q=80" alt="Logo Manos Mágicas" class="logo">
+      <h1 id="main-title" tabindex="0">Manos Mágicas</h1>
+      <nav class="nav" role="navigation" aria-label="Menú principal">
+  <button class="nav-btn" onclick="showContent('quienes')" aria-label="Quiénes Somos" tabindex="0"><span class="nav-icon" aria-hidden="true">🏢</span> Quiénes Somos</button>
+  <button class="nav-btn" onclick="showContent('promesa')" aria-label="Promesa de Valor" tabindex="0"><span class="nav-icon" aria-hidden="true">💎</span> Promesa de Valor</button>
+  <button class="nav-btn" onclick="showContent('productos')" aria-label="Nuestros Productos" tabindex="0"><span class="nav-icon" aria-hidden="true">🛍️</span> Nuestros Productos</button>
+  <button class="nav-btn" onclick="showContent('impacto')" aria-label="Impacto Social" tabindex="0"><span class="nav-icon" aria-hidden="true">🌍</span> Impacto Social</button>
+  <button class="nav-btn" onclick="showContent('talleres')" aria-label="Experiencias y Talleres" tabindex="0"><span class="nav-icon" aria-hidden="true">🎓</span> Experiencias y Talleres</button>
+  <button class="nav-btn" onclick="showContent('bolsa')" aria-label="Bolsa de Trabajo" tabindex="0"><span class="nav-icon" aria-hidden="true">💼</span> Bolsa de Trabajo</button>
+  <button class="nav-btn" onclick="showContent('oferta')" aria-label="Ofrece tus Servicios" tabindex="0"><span class="nav-icon" aria-hidden="true">🤝</span> Ofrece tus Servicios</button>
+      </nav>
+    </div>
+  </header>
+  <main class="main" role="main">
+    <section id="content" role="region" aria-live="polite" aria-label="Contenido principal">
+      <!-- El contenido se mostrará aquí -->
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
